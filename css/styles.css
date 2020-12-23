@@ -32,9 +32,6 @@ img {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
-  padding-top: px;
-  padding-bottom: px;
-  align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +43,10 @@ img {
   margin-left: auto;
   width: 1200px;
   display: flex;
+  align-items: baseline;
+  padding: 0px 15px;
 }
+
 /*Header*/
 .header {
   padding-top: 20px;
@@ -584,27 +584,34 @@ img {
   background-color: var(--back-color);
   padding-bottom: 60px;
   padding-top: 60px;
+  align-items: baseline;
 }
-.footer-info {
+
+.footer-img {
   display: block;
+  margin-bottom: 20px;
+}
+.footer .footer-img {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.color-letter {
+  display: inline-block;
+  color: var(--accent-color);
+  margin-right: -7px;
+}
+.footer-list {
+  list-style: none;
   margin-right: 70px;
 }
-.footer-img {
-  padding-bottom: 20px;
-}
-.footer-map {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--general-second-color);
-  padding-bottom: 9px;
-}
-.address-link {
-}
-.footer-mail {
+.footer-item a {
+  text-decoration: none;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -612,26 +619,17 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  padding-bottom: 9px;
-  display: block;
 }
-.address-link:hover,
-.address-link:focus {
+.footer-item:nth-child(1) a {
+  color: #fff;
 }
-.footer-tel {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
 }
-.footer-tel:hover,
-.footer-tel:focus {
+.footer-item:hover a {
+  color: var(--accent-color);
 }
+
 .social-down {
   display: block;
   width: 206px;
@@ -639,6 +637,7 @@ img {
   margin-right: 93px;
 }
 .link-down-title {
+  display: block;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -647,7 +646,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .link-down-list {
